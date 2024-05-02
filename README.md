@@ -17,6 +17,8 @@ Timing wise, the clock pulses are around 975us (first pulse) and 125us wide. Eac
 
 Oh, and the clock/data streams, whilst clearly digital are only a maximum 1.5v p-p, depending upon the condition of the AA battery. I found that they were 1.35v p-p out of my TMB module... not a lot to work with!
 
+_Scope - TMB pins 9 (data, yellow trace) and 10 (clock, blue trace)... 23.2°C_
+
 ![](TMB-ScopeTrace1.png)
 
 ## Connecting the TMB Module to an Arduino Mega R3
@@ -45,9 +47,13 @@ Not a lot to it, but it is all in the INO file: **TMB-Module.ino**
 - In the Data Read function we read the ADC level and use that to recognise 0's and 1's. 
 
 # Decoded Temperature Data
+_CoolTerm O/P (DejaVu San Mono, UTF8)_
+
 ![](TMB-Decoded.png)
 
 ## Reconstructed Clock/Data Pulses
+_Scope - Mega pins 9 (data, yellow trace) and 10 (clock, blue trace)... 21.1°C_
+
 ![](TMB-ScopeTrace2.png)
 
 ## **_Enjoy!_**
