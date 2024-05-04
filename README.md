@@ -17,7 +17,7 @@ Timing wise, the clock pulses are around 975us (first pulse) and 125us wide. Eac
 
 Oh, and the clock/data streams, whilst clearly digital are only a maximum 1.5v p-p, depending upon the condition of the AA battery. I found that they were 1.35v p-p out of my TMB module... not a lot to work with!
 
-_Scope - TMB pins 9 (data, yellow trace) and 10 (clock, blue trace)... 23.2°C_
+_Scope - TMB pins 9 (data, yellow trace) and 10 (clock, blue trace)... 23.2°C (0001000110010)_
 
 ![](TMB-ScopeTrace1.png)
 
@@ -52,7 +52,7 @@ _CoolTerm O/P (DejaVu San Mono, UTF8)_
 ![](TMB-Decoded.png)
 
 ## Reconstructed Clock/Data Pulses
-_Scope - Mega pins 9 (data, yellow trace) and 10 (clock, blue trace)... 21.1°C_
+_Scope - Mega pins 9 (data, yellow trace) and 10 (clock, blue trace)... 21.1°C (0001000010001)_
 
 ![](TMB-ScopeTrace2.png)
 
