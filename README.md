@@ -1,8 +1,8 @@
 # TMB-DataRead
 Reading Serial Data from an MB-TMB880CF-1 Temperature Module with an Arduino Mega R3.
 
-## What is a MB-TMB880CF-1 Module?
-The TMB module is a simple clock & temperature reading module. It has an on board LCD display, a built in temprature sensor and is powered by a single AA battery. It can be used as a clock and can display the temperature in °C or °F. Additionally, it can be set to alarm on high or low temperature readings. However, all these extra features require connecting buttons and other things to the expansion connector. By default, with nothing connected to the expansion connector, the TMB module displays the temperature in °C, and has no hi/lo triggers set.
+## What is an MB-TMB880CF-1 Module?
+The TMB module is a simple and reliable clock & temperature reading module from the late 1980's and early 1990's. It has an on board LCD display, a built in temprature sensor and is powered by a single AA battery. It can be used as a clock and can display the temperature in °C or °F. Additionally, it can be set to alarm on high or low temperature readings. However, all these extra features require connecting buttons and other things to the expansion connector. By default, with nothing connected to the expansion connector, the TMB module displays the temperature in °C, and has no hi/lo triggers set.
 
 ![](TMB-Fig1.png) ![](MB-TMB880CF-1.jpg)
 
