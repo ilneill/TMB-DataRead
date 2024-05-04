@@ -31,7 +31,7 @@ The Fritzing file for this project is included in this archive: **TMB-DataRead.f
 ## How I Read the Clock/Data
 I needed to detect the clock pulses, rising and faling edges, using that to recognise the start of a data stream and also trigger a data reading on each falling edge. But the clock and the data pulses are tiny, and at maximum are nowhere near the level to be recognised as a "high" in my 5v Mega. I was thinking of level convertors, or using transitors or FETs to allow me to get 0v and 5v levels for the Mega... then my research happened upon comparators (Op-Amps) and the fact that the Mega has one built in!
 
-The analog comparitor in the the Arduino Mega R3 can be given the 1.1v internal reference as an input, and with the clock pulse on the other input, I can recognise highs, lows and edges and trigger hardware interrups from them.
+The analog comparator in the the Arduino Mega R3 can be given the 1.1v internal reference as an input, and with the clock pulse on the other input, I can recognise highs, lows and edges and trigger hardware interrups from them.
 
 So that was the clock pulses sorted, leaving just the data to be read and "level shifted". I just used an analog input and if the read level was high enough then I know I had a bit that was a 1, else it was a 0.
 
@@ -43,7 +43,7 @@ Not a lot to it, but it is all in the INO file: **TMB-Module.ino**
 - Define some I/O pins.
 - Set things up, including setting the alog comp inputs, the interrupt service routine and the serial port.
 - In the loop, wait to be told of a clock pulse then read in the data. Do that until all data is read and then print the temperature.
-- In the Clock Pulse ISR we get the comparitor level and use that to spot rising and falling edges.
+- In the Clock Pulse ISR we get the comparator level and use that to spot rising and falling edges.
 - In the Data Read function we read the ADC level and use that to recognise 0's and 1's. 
 
 # Decoded Temperature Data
