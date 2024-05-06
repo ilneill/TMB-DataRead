@@ -59,7 +59,7 @@ _Scope - Mega pins 9 (data, yellow trace) and 10 (clock, blue trace)... 21.1°C 
 ## YouTube
 Here I describe the project, explain the code and show some data captured on the oscilloscope.
 
-https://youtu.be/S138AOF_jl8
+https://youtu.be/1RPE41dPGrs
 
 
 ## **_Enjoy!_**
